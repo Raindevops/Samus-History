@@ -1,6 +1,6 @@
-const webpack = require("webpack");
+const HtmlWebPackPlugin = require("html-webpack-plugin");
+const { CleanWebpackPlugin} = require("clean-webpack-plugin");
 const path = require("path");
-const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = {
   entry: path.resolve(__dirname,"./src/index.js"),
@@ -27,7 +27,8 @@ module.exports = {
     path: path.resolve(__dirname,"./public"),
     filename: "bundle.js"
   },
-  devServer: {
-    contentBase: path.resolve(__dirname,"./public")
-  }
+  plugins: [
+    // new CleanWebpackPlugin(),
+    new HtmlWebPackPlugin()
+  ]
 }
