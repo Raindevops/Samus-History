@@ -1,2 +1,2 @@
 const string = "string"
-import "../assets/stylesheet/style.css"
+import "../assets/stylesheet/scss/main.scss"
