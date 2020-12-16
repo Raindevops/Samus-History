@@ -27,7 +27,7 @@ main{
         height: 100%;
         background-image: url("../../assets/body-bg2.jpg");
         background-repeat: repeat-y;
-        background-size: 100% 100vh;
+        background-size: 100% 120vh;
         background-position: left top;
         filter: brightness(.5);
     }
@@ -55,14 +55,14 @@ main{
                         background: url("../../assets/biographie.jpg") center no-repeat;
                         background-size: cover;
                         float: right;
-                        margin: 2rem 0 2rem 2rem; 
+                        margin: 0 0 2rem 2rem; 
                     }
                     &2{
                         background: url("../../assets//biographie2.jpg") center no-repeat;
                         background-size: cover;
                         float: left;
                         padding: 1rem 0 1rem;
-                        margin: 2rem 2rem 2rem 0; 
+                        margin: 0 2rem 2rem 0; 
                     }
                 }
             }
@@ -81,8 +81,13 @@ main{
             }
         } 
         &#skills{
+            h2{
+                text-align: center;
+            }
             p{
                 text-align: center;
+                max-width: 50%;
+                margin: 1rem auto;  
             }
             iframe{
                 margin: 1.5rem auto;
