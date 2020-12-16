@@ -28,7 +28,10 @@ module.exports = {
     filename: "bundle.js"
   },
   plugins: [
-    // new CleanWebpackPlugin(),
-    new HtmlWebPackPlugin()
+    new CleanWebpackPlugin(),
+    new HtmlWebPackPlugin({
+      template: path.resolve(__dirname,"./src/template/home.html"),
+      filename: path.resolve(__dirname,"./public/index.html")
+    })
   ]
 }
