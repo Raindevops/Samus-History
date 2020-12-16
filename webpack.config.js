@@ -1,12 +1,24 @@
 const webpack = require("webpack");
 const path = require("path");
 
-let config = {
-    entry: "./src/index.js",
-    output: {
-      path: path.resolve(__dirname, "./public"),
-      filename: "./bundle.js"
-    }
+module.exports = {
+  entry: path.resolve(__dirname,"./src/index.js"),
+
+  module:{
+    rules: [{
+      test: /\.(js)$/,
+      exclude: /node_modules/,
+      use: ['babel-loader']
+    }]
+  },
+  resolve: {
+    extensions: ['*','.js']
+  },
+  output:{
+    path: path.resolve(__dirname,"./public"),
+    filename: "bundle.js"
+  },
+  devServer: {
+    contentBase: path.resolve(__dirname,"./public")
   }
-  
-module.exports = config;
+}

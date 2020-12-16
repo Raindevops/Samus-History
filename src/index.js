@@ -1,1 +1,3 @@
-alert("toto");
+const string = "string"
+
+alert(string);
