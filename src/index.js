@@ -1,3 +1,2 @@
 const string = "string"
-
-alert(string);
+import "../assets/stylesheet/style.css"
