@@ -19,11 +19,6 @@ test_samus:
   stage: Test
   image: node:$NODE_IMAGE_VERSION
   script: npm run build
-  only:
-    - develop
-    - preprod
-    - master
-    - tags
 
 preprod_delivery:
   stage: Build
