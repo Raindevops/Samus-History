@@ -18,7 +18,7 @@ default:
 test_samus:
   stage: Test
   image: node:$NODE_IMAGE_VERSION
-  script: npm run build
+  script: npm install && npm run build
 
 preprod_delivery:
   stage: Build
