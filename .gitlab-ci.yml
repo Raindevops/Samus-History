@@ -1,0 +1,71 @@
+stages:
+  - Test
+  - Build
+  - Deploy
+
+variables:
+  NODE_IMAGE_VERSION: "15-alpine"
+  DOCKER_IMAGE_VERSION: "19.03.13-git"
+  DOCKER_SERVICE_VERSION: "19-dind"
+
+default:
+  tags:
+    - docker
+  image: docker:$DOCKER_IMAGE_VERSION
+  services:
+    - docker:$DOCKER_SERVICE_VERSION
+
+test_samus:
+  stage: Test
+  image: node:$NODE_IMAGE_VERSION
+  script: npm run build
+  only:
+    - develop
+    - preprod
+    - master
+    - tags
+
+preprod_delivery:
+  stage: Build
+  dependencies:
+    - test_samus
+  only:
+    - preprod
+  before_script:
+    - docker login -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD $CI_REGISTRY
+  script:
+    - docker build -t $CI_REGISTRY_IMAGE:beta-$CI_COMMIT_REF_SLUG
+    - docker push $CI_REGISTRY_IMAGE:beta-$CI_COMMIT_REF_SLUG
+    
+prod_delivery:
+  stage: Build
+  dependencies:
+    - test_samus
+  only:
+    - master
+  before_script:
+    - docker login -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD $CI_REGISTRY
+  script:
+    - docker build -t $CI_REGISTRY_IMAGE:latest
+    - docker push $CI_REGISTRY_IMAGE:latest
+
+tags_delivery:
+  stage: Build
+  dependencies:
+    - test_samus
+  only: 
+    - tags
+  before_script:
+    - docker login -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD $CI_REGISTRY
+  script:
+    - docker build -t $CI_REGISTRY_IMAGE:$CI_COMMIT_TAG
+    - docker push $CI_REGISTRY_IMAGE:$CI_COMMIT_TAG
+
+deploy_preprod:
+  stage: Deploy
+  dependencies:
+    - preprod_delivery
+  only:
+    - preprod
+  script: echo "section in comming"
+
