@@ -3,17 +3,17 @@
 </svelte:head>
 <div class="stars"></div>
 <header class="h-screen relative">
-    <div class="bg-header absolute top-0 left-0 w-full h-full bg-cover brightness-50"></div>
+    <div class="bg-header absolute top-0 left-0 w-full h-full bg-cover bg-center brightness-50"></div>
     <!-- <svg class="arrows">
         <path class="a1" d="M0 0 L30 32 L60 0"></path>
         <path class="a2" d="M0 20 L30 52 L60 20"></path>
         <path class="a3" d="M0 40 L30 72 L60 40"></path>
     </svg> -->
 </header>
-<main class="container mx-auto">
+<main class="container mx-auto bg-black">
     <section id="biography" class="p-12 mb-72">
-        <h2 class="red">Biographie</h2>
-        <div class="biography-content">
+        <h2 class="text-red-500">Biographie</h2>
+        <div class="biography-content text-white">
             <div class="biography-bg biography-bg1"></div>
             <p class="content white">Elle est la fille unique de Rodney et Virginia Aran, membres de la Fédération Galactique. Un jour, les pirates de l'espace attaquent la colonie, et leur nouvelle recrue, Ridley, tue les parents de Samus sous ses yeux. Elle est alors recueillie par les Chozos, des hommes à tête d'oiseau, et grandit sur la planète Zebes. Ensuite, elle dut quitter les lieux suite à l'invasion pirate.</p>
             <p class="content white">Durant sa jeunesse, elle intégra la Fédération Galactique, sous les ordres du commandant Adam Malkovich, à qui elle tint tête, attitude bornée qu'elle attribuera plus tard à une erreur de jeunesse. Ce qui ne l'empêchera pas de quitter la Fédération pour devenir une chasseuse de primes indépendante.</p>
@@ -30,8 +30,8 @@
     </section>
     <section id="personnality" class="p-12 mb-72">
         <div class="background"></div>
-        <h2 class="red">Personnalité</h2>
-        <div class="personnality-content">
+        <h2 class="text-red-500">Personnalité</h2>
+        <div class="personnality-content text-white">
             <p class="content white">La personnalité de Samus n'a jamais été approfondie dans les jeux, une décision de Nintendo pour laisser au joueur la liberté de l'imaginer. Cependant, Metroid Fusion, Metroid Prime 3: Corruption et Metroid: Other M donnent un aperçu de la personnalité de Samus, ainsi que d'autres médias tels que la bande dessinée et le manga.</p>
             <p class="content white">Typiquement, Samus est dépeinte comme une héroïne mélancolique qui, en dépit de ses grandes réalisations, reste incroyablement solitaire et sombre, cherchant à se venger des pirates de l'espace, en particulier Ridley, qui est personnellement responsable de la mort de ses parents. Samus est inspirée par le personnage Ripley de la série Alien. Cependant, contrairement à Ripley, Samus n'est jamais montrée comme étant traumatisée par les Métroides qu'elle affronte durant ses diverses missions. </p>
             <p class="content white">Elle était cependant pétrifiée par la peur lorsqu'elle a rencontré Ridley dans le manga, dans lequel il est considéré qu'elle souffre d'un syndrome de stress post-traumatique. Cette affliction refait surface quand elle découvre Ridley dans Metroid: Other M, au point qu'elle pouvait à peine communiquer; et ne pouvait reprendre son sang-froid jusqu'à ce que Anthony Higgs soit abattu en essayant de la défendre. Cette représentation, ainsi que d'autres facettes de sa personnalité aperçues dans Other M, ont été vivement critiqués par les fans car ils l'ont découvert comme étant plus faible psychologiquement, plus instable et peureuse que dans les jeux précédents. Un personnage qui est donc à l'opposé de l'image générale que la plupart des fans ont de Samus ont retenu de ses apparitions précédentes et des brèves indications sur ses pensées et son passé.</p>
@@ -39,8 +39,8 @@
             <p class="content white">Dans les autres médias (sous licence), la personnalité de Samus est en grande partie définie par l'écrivain. En conséquence, sa personnalité a varié considérablement entre les principales publications. Le manga, par exemple, de 2002 la dépeint comme souffrante de traumatismes de l'enfance et souvent pensant à son rôle et le rôle des Pirates.</p>
         </div>
     </section>
-    <section id="skills" class="p-12">
-        <h2 class="red">Aptitudes et compétences</h2> 
+    <section id="skills" class="p-12 text-white">
+        <h2 class="text-red-500">Aptitudes et compétences</h2> 
         <p class="content white">Samus est une chasseuse de primes très puissante et compétente avec un physique athlétique , un grande agilité et divers autre pouvoirs issue de son armure Chozo comme les missiles , la morph ball , rayon glaciale....</p>
         <!-- <iframe src="https://www.youtube.com/embed/fI-PfGxALL0?controls=0&rel=0" width="1200" height="600"></iframe> -->
     </section>
