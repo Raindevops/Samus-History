@@ -4,14 +4,14 @@
 <div class="stars"></div>
 <header class="h-screen relative">
     <div class="bg-header absolute top-0 left-0 w-full h-full bg-cover brightness-50"></div>
-    <svg class="arrows">
+    <!-- <svg class="arrows">
         <path class="a1" d="M0 0 L30 32 L60 0"></path>
         <path class="a2" d="M0 20 L30 52 L60 20"></path>
         <path class="a3" d="M0 40 L30 72 L60 40"></path>
-    </svg>
+    </svg> -->
 </header>
 <main class="container mx-auto">
-    <section id="biography">
+    <section id="biography" class="p-12 mb-72">
         <h2 class="red">Biographie</h2>
         <div class="biography-content">
             <div class="biography-bg biography-bg1"></div>
@@ -28,7 +28,7 @@
             <p class="content white">Cependant Samus Sombre réussi par des moyens inconnus a se reconstruire dans le monde de lumière et a prendre le contrôle de ce qu'il restait des Pirates de l'Espace, elle finit par lancer un assaut contre le V.F.G. Valhalla avec les pirates et dérobe l'unité Aurora 313.</p>
         </div>
     </section>
-    <section id="personnality">
+    <section id="personnality" class="p-12 mb-72">
         <div class="background"></div>
         <h2 class="red">Personnalité</h2>
         <div class="personnality-content">
@@ -39,9 +39,9 @@
             <p class="content white">Dans les autres médias (sous licence), la personnalité de Samus est en grande partie définie par l'écrivain. En conséquence, sa personnalité a varié considérablement entre les principales publications. Le manga, par exemple, de 2002 la dépeint comme souffrante de traumatismes de l'enfance et souvent pensant à son rôle et le rôle des Pirates.</p>
         </div>
     </section>
-    <section id="skills">
+    <section id="skills" class="p-12">
         <h2 class="red">Aptitudes et compétences</h2> 
         <p class="content white">Samus est une chasseuse de primes très puissante et compétente avec un physique athlétique , un grande agilité et divers autre pouvoirs issue de son armure Chozo comme les missiles , la morph ball , rayon glaciale....</p>
-        <iframe src="https://www.youtube.com/embed/fI-PfGxALL0?controls=0&rel=0" width="1200" height="600"></iframe>
+        <!-- <iframe src="https://www.youtube.com/embed/fI-PfGxALL0?controls=0&rel=0" width="1200" height="600"></iframe> -->
     </section>
 </main>

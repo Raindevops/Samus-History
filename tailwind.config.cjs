@@ -2,6 +2,9 @@ module.exports = {
     mode: 'jit',
     purge: ["./src/**/*.svelte"],
     theme: {
+        fontFamily: {
+            // 'body': ['"Open Sans"']
+        },
         extend: {
             backgroundImage: {
                 'header':'url(/static/background.jpg)',
