@@ -1,20 +1,13 @@
 <div class="stars"></div>
-<header>
-    <nav>
-        <ul>
-            <li><a class="white" href="#biography">Biographie</a></li>
-            <li><a class="white" href="#personnality">Personnalité</a></li>
-            <li><a class="white" href="#skills">Aptitudes et compétences</a></li>
-        </ul>
-    </nav>
-    <div class="background"></div>
+<header class="h-screen relative">
+    <div class="bg-header absolute top-0 left-0 w-full h-full bg-cover"></div>
     <svg class="arrows">
         <path class="a1" d="M0 0 L30 32 L60 0"></path>
         <path class="a2" d="M0 20 L30 52 L60 20"></path>
         <path class="a3" d="M0 40 L30 72 L60 40"></path>
     </svg>
 </header>
-<main>
+<main class="container mx-auto">
     <section id="biography">
         <h2 class="red">Biographie</h2>
         <div class="biography-content">

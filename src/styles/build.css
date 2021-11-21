@@ -566,10 +566,93 @@ video {
 [hidden] {
   display: none;
 }
-.uppercase {
-	text-transform: uppercase;
+.container {
+	width: 100%;
 }
-.text-indigo-500 {
-	--tw-text-opacity: 1;
-	color: rgba(99, 102, 241, var(--tw-text-opacity));
+@media (min-width: 640px) {
+
+	.container {
+		max-width: 640px;
+	}
+}
+@media (min-width: 768px) {
+
+	.container {
+		max-width: 768px;
+	}
+}
+@media (min-width: 1024px) {
+
+	.container {
+		max-width: 1024px;
+	}
+}
+@media (min-width: 1280px) {
+
+	.container {
+		max-width: 1280px;
+	}
+}
+@media (min-width: 1536px) {
+
+	.container {
+		max-width: 1536px;
+	}
+}
+.fixed {
+	position: fixed;
+}
+.absolute {
+	position: absolute;
+}
+.relative {
+	position: relative;
+}
+.top-0 {
+	top: 0px;
+}
+.left-0 {
+	left: 0px;
+}
+.z-50 {
+	z-index: 50;
+}
+.mx-auto {
+	margin-left: auto;
+	margin-right: auto;
+}
+.grid {
+	display: grid;
+}
+.h-screen {
+	height: 100vh;
+}
+.h-full {
+	height: 100%;
+}
+.w-full {
+	width: 100%;
+}
+.grid-cols-3 {
+	grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+.bg-header {
+	background-image: url(/static/background.jpg);
+}
+.bg-cover {
+	background-size: cover;
+}
+.px-3 {
+	padding-left: 0.75rem;
+	padding-right: 0.75rem;
+}
+.px-5 {
+	padding-left: 1.25rem;
+	padding-right: 1.25rem;
+}
+.pt-3 {
+	padding-top: 0.75rem;
+}
+.text-center {
+	text-align: center;
 }
