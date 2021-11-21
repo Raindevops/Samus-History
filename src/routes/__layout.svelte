@@ -1,3 +1,6 @@
+<script>
+    import "../styles/build.css"
+</script>
 <nav>
     <ul>
         <li><a class="white" href="#biography">Biographie</a></li>
