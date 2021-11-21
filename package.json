@@ -19,6 +19,6 @@
   },
   "type": "module",
   "dependencies": {
-    "jit": "^0.1.1"
+    "jit": "^0.1.0"
   }
 }
