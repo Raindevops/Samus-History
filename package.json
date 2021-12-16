@@ -1,45 +1,24 @@
 {
-  "name": "samus",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "test",
+  "version": "0.0.1",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "watch": "webpack --watch",
-    "build": "webpack"
+    "dev": "svelte-kit dev",
+    "build": "svelte-kit build",
+    "preview": "svelte-kit preview",
+    "tailwind:watch": "cross-env TAILWIND_MODE=watch cross-env NODE_ENV=development postcss src/styles/tailwind.css -o src/styles/build.css -w",
+    "tailwind:build": "postcss src/styles/tailwind.css -o src/styles/build.css --minify"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+ssh://git@gitlab.com/raindevops/samus.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://gitlab.com/raindevops/samus/issues"
-  },
-  "homepage": "https://gitlab.com/raindevops/samus#readme",
   "devDependencies": {
-    "@babel/core": "^7.12.10",
-    "@babel/preset-env": "^7.12.11",
-    "autoprefixer": "^10.1.0",
-    "babel-core": "^6.26.3",
-    "babel-loader": "^8.2.2",
-    "babel-preset-env": "^1.7.0",
-    "clean-webpack-plugin": "^3.0.0",
-    "css-loader": "^5.0.1",
-    "html-loader": "^1.3.2",
-    "html-webpack-plugin": "^4.5.0",
-    "mini-css-extract-plugin": "^1.3.3",
-    "node-sass": "^5.0.0",
-    "postcss-loader": "^4.1.0",
-    "postcss-preset-env": "^6.7.0",
-    "sass": "^1.30.0",
-    "sass-loader": "^10.1.0",
-    "style-loader": "^2.0.0",
-    "url-loader": "^4.1.1",
-    "webpack": "^5.10.3",
-    "webpack-cli": "^4.2.0",
-    "webpack-dev-server": "^3.11.0"
+    "@sveltejs/kit": "next",
+    "autoprefixer": "^10.4.0",
+    "concurrently": "^6.4.0",
+    "cross-env": "^7.0.3",
+    "postcss-cli": "^9.0.2",
+    "svelte": "^3.42.6",
+    "tailwindcss": "^2.2.19"
+  },
+  "type": "module",
+  "dependencies": {
+    "jit": "^0.1.0"
   }
 }
