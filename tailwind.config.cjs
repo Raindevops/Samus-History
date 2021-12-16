@@ -7,13 +7,13 @@ module.exports = {
         },
         extend: {
             backgroundImage: {
-                'header':'url(/static/background.jpg)',
-                'biography1': 'url(/static/biographie.jpg)',
-                'biography2': 'url(/static/biographie2.jpg)',
-                'background1': 'url(/static/body-bg.jpg)',
-                'background2': 'url(/static/body-bg2.jpg)',
-                'appearence': 'url(/static/appearence.jpg)',
-                'personnality': 'url(/static/personnalite.jpg)'
+                'header':'url(/background.jpg)',
+                'biography1': 'url(/biographie.jpg)',
+                'biography2': 'url(/biographie2.jpg)',
+                'background1': 'url(/body-bg.jpg)',
+                'background2': 'url(/body-bg2.jpg)',
+                'appearence': 'url(/appearence.jpg)',
+                'personnality': 'url(/personnalite.jpg)'
             }
         }
     }

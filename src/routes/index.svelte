@@ -1,20 +1,20 @@
 <svelte:head>
     <title> Samus - Metroid </title>
 </svelte:head>
-<div class="stars"></div>
 <header class="h-screen relative mb-12">
     <div class="bg-header absolute top-0 left-0 w-full h-full bg-cover bg-center brightness-50"></div>
-    <!-- <svg class="arrows">
+    <svg class="arrows">
         <path class="a1" d="M0 0 L30 32 L60 0"></path>
         <path class="a2" d="M0 20 L30 52 L60 20"></path>
         <path class="a3" d="M0 40 L30 72 L60 40"></path>
-    </svg> -->
+    </svg>
 </header>
+<div class="bg bg-background1 h-screen w-screen fixed top-0"></div>
 <main class="container mx-auto px-4 sm:px-0">
-    <section id="biography" class="mb-12">
+    <section id="biography" class="mb-12 rounded-lg border-2 p-4 md:p-8">
         <h2 class="mb-12">Biographie</h2>
-        <div class="lg:grid grid-cols-2 gap-8">
-            <div class="bg-biography1 h-60 lg:w-auto lg:h-auto bg-cover lg:bg-contain lg:bg-center bg-no-repeat mb-8"></div>
+        <div class="xl:grid grid-cols-2 gap-8">
+            <div class="bg-biography1 h-60 lg:h-96 xl:w-auto xl:h-auto bg-cover xl:bg-contain xl:bg-center bg-no-repeat mb-8"></div>
             <div class="content mb-8">
                 <p>Elle est la fille unique de Rodney et Virginia Aran, membres de la Fédération Galactique. Un jour, les pirates de l'espace attaquent la colonie, et leur nouvelle recrue, Ridley, tue les parents de Samus sous ses yeux. Elle est alors recueillie par les Chozos, des hommes à tête d'oiseau, et grandit sur la planète Zebes. Ensuite, elle dut quitter les lieux suite à l'invasion pirate.</p>
                 <p>Durant sa jeunesse, elle intégra la Fédération Galactique, sous les ordres du commandant Adam Malkovich, à qui elle tint tête, attitude bornée qu'elle attribuera plus tard à une erreur de jeunesse. Ce qui ne l'empêchera pas de quitter la Fédération pour devenir une chasseuse de primes indépendante.</p>
@@ -24,8 +24,8 @@
                 <p>Le vaisseau a été infecté par une souche de parasites originaires de Tallon IV suite à un incident. La frégate s'autodétruit et bien que Samus ait rejoint son vaisseau, elle s'écrase sur Tallon en découvrant des ruines Chozo. Durant l'autoréparation du vaisseau, elle explore la planète et découvre le triste sort des Chozo vivant sur la planète ainsi qu'une substance mutagène : le Phazon, ayant modifié l'écosystème de la planète. </p>                    
             </div>
         </div>
-        <div class="grid lg:grid-cols-2 gap-8">
-            <div class="mb-8 lg:order-last bg-biography2 h-60 lg:w-auto lg:h-auto bg-cover lg:bg-contain lg:bg-center bg-no-repeat"></div>
+        <div class="grid xl:grid-cols-2 gap-8">
+            <div class="mb-8 xl:order-last bg-biography2 h-60 lg:h-96 xl:w-auto xl:h-auto bg-cover xl:bg-contain xl:bg-center bg-no-repeat"></div>
             <div class="content">
                 <p>Pour venger les Chozo, elle se rend au cratère d'impact du Léviathan afin d'éliminer le Métroïde qui semble être la source du Phazon. Ce dernier vaincu, elle dérobe sa combinaison de Phazon ainsi qu'une partie de son matériel génétique, éliminant au passage une section de pirates ayant établi une base de recherches sur le Phazon dans l'espoir de créer des supers soldats.</p>
                 <p>Sa mission suivante fut de découvrir l'origine d'un message indiquant que "le pouvoir ultime se situe dans le Cluster Alimbic" et de, s'il s'avère que ce message est réel, sécuriser le pouvoir en question. Elle y rencontre six autres chasseurs de primes étant à la recherche dudit pouvoir. Ce message était finalement un piège tendu par une entité mystérieuse nommée Goréa, dans l'espoir de se libérer des oubliettes. Samus détruisit l'entité sans rien savoir de ce mystérieux pouvoir.</p>
@@ -34,10 +34,10 @@
             </div>
         </div>
     </section>
-    <section id="personnality" class="mb-12">
+    <section id="personnality" class="mb-12 rounded-lg border-2 p-4 md:p-8">
         <h2 class="mb-12">Personnalité</h2>
         <div class="xl:grid grid-cols-2 gap-8">
-            <div class="mb-8 bg-personnality h-60 xl:h-auto bg-center bg-cover xl:bg-contain bg-no-repeat"></div>
+            <div class="mb-8 bg-personnality h-60 lg:h-96 xl:h-auto bg-center bg-cover xl:bg-contain bg-no-repeat"></div>
             <div class="mb-8 personnality-content">
                 <p>La personnalité de Samus n'a jamais été approfondie dans les jeux, une décision de Nintendo pour laisser au joueur la liberté de l'imaginer. Cependant, Metroid Fusion, Metroid Prime 3: Corruption et Metroid: Other M donnent un aperçu de la personnalité de Samus, ainsi que d'autres médias tels que la bande dessinée et le manga.</p>
                 <p>Typiquement, Samus est dépeinte comme une héroïne mélancolique qui, en dépit de ses grandes réalisations, reste incroyablement solitaire et sombre, cherchant à se venger des pirates de l'espace, en particulier Ridley, qui est personnellement responsable de la mort de ses parents. Samus est inspirée par le personnage Ripley de la série Alien. Cependant, contrairement à Ripley, Samus n'est jamais montrée comme étant traumatisée par les Métroides qu'elle affronte durant ses diverses missions. </p>
@@ -49,7 +49,7 @@
             <p>Dans les autres médias (sous licence), la personnalité de Samus est en grande partie définie par l'écrivain. En conséquence, sa personnalité a varié considérablement entre les principales publications. Le manga, par exemple, de 2002 la dépeint comme souffrante de traumatismes de l'enfance et souvent pensant à son rôle et le rôle des Pirates.</p>
        </div>
     </section>
-    <section id="skills" class="mb-12">
+    <section id="skills" class="mb-12 rounded-lg border-2 p-4 md:p-8">
         <h2 class="mb-12">Aptitudes et compétences</h2> 
         <p class="mb-8">Samus est une chasseuse de primes très puissante et compétente avec un physique athlétique , un grande agilité et divers autre pouvoirs issue de son armure Chozo comme les missiles , la morph ball , rayon glaciale....</p>
         <div class="wrapper h-96">
