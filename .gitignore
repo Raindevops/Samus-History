@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 node_modules/
 public/
 .svelte-kit/
 build/
-=======
-style.css.map
->>>>>>> d2af86af5554c7bbda005959fce179a332a6cf8c

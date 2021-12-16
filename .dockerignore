@@ -1,10 +1,4 @@
-<<<<<<< HEAD
 node_modules
 Dockerfile
 build
 README.md
-=======
-scss/
-style.css.map
-Dockerfile
->>>>>>> d2af86af5554c7bbda005959fce179a332a6cf8c
