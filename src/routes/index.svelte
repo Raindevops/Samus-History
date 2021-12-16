@@ -1,7 +1,6 @@
 <svelte:head>
     <title> Samus - Metroid </title>
 </svelte:head>
-<div class="stars"></div>
 <header class="h-screen relative mb-12">
     <div class="bg-header absolute top-0 left-0 w-full h-full bg-cover bg-center brightness-50"></div>
     <svg class="arrows">
