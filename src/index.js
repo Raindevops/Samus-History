@@ -1,1 +1,0 @@
-import "../assets/stylesheet/scss/main.scss"
