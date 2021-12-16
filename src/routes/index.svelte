@@ -11,9 +11,9 @@
     </svg> -->
 </header>
 <main class="container mx-auto">
-    <section id="biography" class="p-12 mb-72">
+    <section id="biography">
         <h2>Biographie</h2>
-        <div class="biography-content text-white">
+        <div class="biography-content ">
             <div class="lg:grid grid-cols-2 gap-8">
                 <div class="bg-biography1 h-60 lg:w-auto lg:h-auto bg-cover lg:bg-contain lg:bg-center bg-no-repeat"></div>
                 <div class="content">
@@ -36,20 +36,26 @@
             </div>
         </div>
     </section>
-    <section id="personnality" class="p-12 mb-72">
-        <div class="background"></div>
+    <section id="personnality">
         <h2>Personnalité</h2>
-        <div class="personnality-content text-white">
-            <p>La personnalité de Samus n'a jamais été approfondie dans les jeux, une décision de Nintendo pour laisser au joueur la liberté de l'imaginer. Cependant, Metroid Fusion, Metroid Prime 3: Corruption et Metroid: Other M donnent un aperçu de la personnalité de Samus, ainsi que d'autres médias tels que la bande dessinée et le manga.</p>
-            <p>Typiquement, Samus est dépeinte comme une héroïne mélancolique qui, en dépit de ses grandes réalisations, reste incroyablement solitaire et sombre, cherchant à se venger des pirates de l'espace, en particulier Ridley, qui est personnellement responsable de la mort de ses parents. Samus est inspirée par le personnage Ripley de la série Alien. Cependant, contrairement à Ripley, Samus n'est jamais montrée comme étant traumatisée par les Métroides qu'elle affronte durant ses diverses missions. </p>
-            <p>Elle était cependant pétrifiée par la peur lorsqu'elle a rencontré Ridley dans le manga, dans lequel il est considéré qu'elle souffre d'un syndrome de stress post-traumatique. Cette affliction refait surface quand elle découvre Ridley dans Metroid: Other M, au point qu'elle pouvait à peine communiquer; et ne pouvait reprendre son sang-froid jusqu'à ce que Anthony Higgs soit abattu en essayant de la défendre. Cette représentation, ainsi que d'autres facettes de sa personnalité aperçues dans Other M, ont été vivement critiqués par les fans car ils l'ont découvert comme étant plus faible psychologiquement, plus instable et peureuse que dans les jeux précédents. Un personnage qui est donc à l'opposé de l'image générale que la plupart des fans ont de Samus ont retenu de ses apparitions précédentes et des brèves indications sur ses pensées et son passé.</p>
+        <div class="xl:grid grid-cols-2 gap-8">
+            <div class="bg-personnality h-60 xl:h-auto bg-center bg-cover xl:bg-contain bg-no-repeat"></div>
+            <div class="personnality-content ">
+                <p>La personnalité de Samus n'a jamais été approfondie dans les jeux, une décision de Nintendo pour laisser au joueur la liberté de l'imaginer. Cependant, Metroid Fusion, Metroid Prime 3: Corruption et Metroid: Other M donnent un aperçu de la personnalité de Samus, ainsi que d'autres médias tels que la bande dessinée et le manga.</p>
+                <p>Typiquement, Samus est dépeinte comme une héroïne mélancolique qui, en dépit de ses grandes réalisations, reste incroyablement solitaire et sombre, cherchant à se venger des pirates de l'espace, en particulier Ridley, qui est personnellement responsable de la mort de ses parents. Samus est inspirée par le personnage Ripley de la série Alien. Cependant, contrairement à Ripley, Samus n'est jamais montrée comme étant traumatisée par les Métroides qu'elle affronte durant ses diverses missions. </p>
+                <p>Elle était cependant pétrifiée par la peur lorsqu'elle a rencontré Ridley dans le manga, dans lequel il est considéré qu'elle souffre d'un syndrome de stress post-traumatique. Cette affliction refait surface quand elle découvre Ridley dans Metroid: Other M, au point qu'elle pouvait à peine communiquer; et ne pouvait reprendre son sang-froid jusqu'à ce que Anthony Higgs soit abattu en essayant de la défendre. Cette représentation, ainsi que d'autres facettes de sa personnalité aperçues dans Other M, ont été vivement critiqués par les fans car ils l'ont découvert comme étant plus faible psychologiquement, plus instable et peureuse que dans les jeux précédents. Un personnage qui est donc à l'opposé de l'image générale que la plupart des fans ont de Samus ont retenu de ses apparitions précédentes et des brèves indications sur ses pensées et son passé.</p>
+            </div>
+        </div>
+        <div>
             <p>Cependant, au moment des événements de Metroid Fusion, ces caractéristiques "faibles" ne sont plus présents, ce qui suggère qu'elle a depuis surmonté les faiblesses qu'elle affiche dans le jeu précédent, et qu'ils étaient simplement le résultat de la dépression après la mort du bébé Métroide.</p>
             <p>Dans les autres médias (sous licence), la personnalité de Samus est en grande partie définie par l'écrivain. En conséquence, sa personnalité a varié considérablement entre les principales publications. Le manga, par exemple, de 2002 la dépeint comme souffrante de traumatismes de l'enfance et souvent pensant à son rôle et le rôle des Pirates.</p>
-        </div>
+       </div>
     </section>
-    <section id="skills" class="p-12 text-white">
+    <section id="skills">
         <h2>Aptitudes et compétences</h2> 
         <p>Samus est une chasseuse de primes très puissante et compétente avec un physique athlétique , un grande agilité et divers autre pouvoirs issue de son armure Chozo comme les missiles , la morph ball , rayon glaciale....</p>
-        <!-- <iframe src="https://www.youtube.com/embed/fI-PfGxALL0?controls=0&rel=0" width="1200" height="600"></iframe> -->
+        <div class="wrapper h-96">
+            <iframe class="w-full h-full" src="https://www.youtube.com/embed/fI-PfGxALL0?controls=0&rel=0"></iframe>
+        </div>
     </section>
 </main>

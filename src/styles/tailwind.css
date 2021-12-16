@@ -10,4 +10,10 @@
         @apply text-red-500;
         @apply text-4xl
     }
+    section{
+        @apply bg-black;
+    }
+    p{
+        @apply text-white
+    }
 }
