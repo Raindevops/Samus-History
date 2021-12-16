@@ -12,7 +12,7 @@
 </header>
 <div class="bg bg-background1 h-screen w-screen fixed top-0"></div>
 <main class="container mx-auto px-4 sm:px-0">
-    <section id="biography" class="mb-12">
+    <section id="biography" class="mb-12 rounded-lg border-2 p-4 md:p-8">
         <h2 class="mb-12">Biographie</h2>
         <div class="lg:grid grid-cols-2 gap-8">
             <div class="bg-biography1 h-60 lg:w-auto lg:h-auto bg-cover lg:bg-contain lg:bg-center bg-no-repeat mb-8"></div>
@@ -35,7 +35,7 @@
             </div>
         </div>
     </section>
-    <section id="personnality" class="mb-12">
+    <section id="personnality" class="mb-12 rounded-lg border-2 p-4 md:p-8">
         <h2 class="mb-12">Personnalité</h2>
         <div class="xl:grid grid-cols-2 gap-8">
             <div class="mb-8 bg-personnality h-60 xl:h-auto bg-center bg-cover xl:bg-contain bg-no-repeat"></div>
@@ -50,7 +50,7 @@
             <p>Dans les autres médias (sous licence), la personnalité de Samus est en grande partie définie par l'écrivain. En conséquence, sa personnalité a varié considérablement entre les principales publications. Le manga, par exemple, de 2002 la dépeint comme souffrante de traumatismes de l'enfance et souvent pensant à son rôle et le rôle des Pirates.</p>
        </div>
     </section>
-    <section id="skills" class="mb-12">
+    <section id="skills" class="mb-12 rounded-lg border-2 p-4 md:p-8">
         <h2 class="mb-12">Aptitudes et compétences</h2> 
         <p class="mb-8">Samus est une chasseuse de primes très puissante et compétente avec un physique athlétique , un grande agilité et divers autre pouvoirs issue de son armure Chozo comme les missiles , la morph ball , rayon glaciale....</p>
         <div class="wrapper h-96">
