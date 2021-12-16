@@ -584,6 +584,7 @@ video {
     body {
 	--tw-bg-opacity: 1;
 	background-color: rgba(0, 0, 0, var(--tw-bg-opacity));
+        /* @apply relative */
 }
     h2 {
 	--tw-text-opacity: 1;
@@ -591,14 +592,21 @@ video {
 	font-size: 2.25rem;
 	line-height: 2.5rem;
 }
-    section {
-	--tw-bg-opacity: 1;
-	background-color: rgba(0, 0, 0, var(--tw-bg-opacity));
-}
+    section{
+        /* @apply bg-black; */
+    }
     p {
 	--tw-text-opacity: 1;
 	color: rgba(255, 255, 255, var(--tw-text-opacity));
 }
+    .bg {
+        z-index: -1;
+        position: absolute;
+        background-position: center;
+        opacity: 0.3;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
 .container {
 	width: 100%;
 }
@@ -678,6 +686,9 @@ video {
 .w-full {
 	width: 100%;
 }
+.w-screen {
+	width: 100vw;
+}
 .grid-cols-2 {
 	grid-template-columns: repeat(2, minmax(0, 1fr));
 }
@@ -692,16 +703,19 @@ video {
 	background-color: rgba(0, 0, 0, var(--tw-bg-opacity));
 }
 .bg-header {
-	background-image: url(/static/background.jpg);
+	background-image: url(/background.jpg);
+}
+.bg-background1 {
+	background-image: url(/body-bg.jpg);
 }
 .bg-biography1 {
-	background-image: url(/static/biographie.jpg);
+	background-image: url(/biographie.jpg);
 }
 .bg-biography2 {
-	background-image: url(/static/biographie2.jpg);
+	background-image: url(/biographie2.jpg);
 }
 .bg-personnality {
-	background-image: url(/static/personnalite.jpg);
+	background-image: url(/personnalite.jpg);
 }
 .bg-cover {
 	background-size: cover;
@@ -741,22 +755,18 @@ video {
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 	transition-duration: 150ms;
 }
-
 .hover\:text-red-500:hover {
 	--tw-text-opacity: 1;
 	color: rgba(239, 68, 68, var(--tw-text-opacity));
 }
-
 .focus\:outline-none:focus {
 	outline: 2px solid transparent;
 	outline-offset: 2px;
 }
-
 .active\:text-red-500:active {
 	--tw-text-opacity: 1;
 	color: rgba(239, 68, 68, var(--tw-text-opacity));
 }
-
 @media (min-width: 640px) {
 
 	.sm\:grid-cols-3 {
@@ -768,7 +778,6 @@ video {
 		padding-right: 0px;
 	}
 }
-
 @media (min-width: 1024px) {
 
 	.lg\:order-last {
@@ -799,7 +808,6 @@ video {
 		background-position: center;
 	}
 }
-
 @media (min-width: 1280px) {
 
 	.xl\:grid {

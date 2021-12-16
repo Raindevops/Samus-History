@@ -10,6 +10,7 @@
         <path class="a3" d="M0 40 L30 72 L60 40"></path>
     </svg> -->
 </header>
+<div class="bg bg-background1 h-screen w-screen fixed top-0"></div>
 <main class="container mx-auto px-4 sm:px-0">
     <section id="biography" class="mb-12">
         <h2 class="mb-12">Biographie</h2>

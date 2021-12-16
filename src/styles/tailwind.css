@@ -4,16 +4,25 @@
 
 @layer base {
     body {
-        @apply bg-black
+        @apply bg-black;
+        /* @apply relative */
     }
     h2 {
         @apply text-red-500;
         @apply text-4xl
     }
     section{
-        @apply bg-black;
+        /* @apply bg-black; */
     }
     p{
         @apply text-white;
+    }
+    .bg {
+        z-index: -1;
+        @apply absolute;
+        @apply bg-center;
+        @apply opacity-30;
+        @apply bg-cover;
+        @apply bg-no-repeat;
     }
 }
