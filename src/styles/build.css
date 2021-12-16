@@ -581,6 +581,9 @@ video {
 	--tw-drop-shadow: var(--tw-empty,/*!*/ /*!*/);
 	--tw-filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
+    html {
+        scroll-behavior: smooth
+    }
     body {
 	--tw-bg-opacity: 1;
 	background-color: rgba(0, 0, 0, var(--tw-bg-opacity));
