@@ -18,17 +18,17 @@ This project is a single HTML page about the heroin Samus in the world of Metro
 
 ### On the develop branch :leaves:
 
- :seedling: **node version :** ``` v14.16.1 ```
+ :seedling: **node version :** ``` v16.13.0 ```
 
 If you only want to run the project, you can use docker commands described previously
 
 **Run localy** :steam_locomotive:
 
-    npm install
-    npm run watch
-
-copy the /public/index.html path in your favorite browser, and you're ready for coding ! 
+    npm run dev
+    npm run tailwind:watch
 
 **Build the project** :wrench:
 
+    npm run tailwind:build
     npm run build
+    
