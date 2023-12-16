@@ -14,7 +14,7 @@ This project is a single HTML page about the heroin Samus in the world of Metro
 
 **Run docker image** :monorail:
 
-    docker run --rm --name=samus-history -d -p 80:3000 samus-history
+    docker run --rm --name=samus-history -d -p 80:3000 samus
 
 ### On the develop branch :leaves:
 
